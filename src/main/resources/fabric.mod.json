@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "keirasaddons",
+	"version": "${version}",
+	"name": "Keira'sAddons",
+	"description": "An addon mod for Angel's Ascent.",
+	"authors": [
+		"Maisie Marlowe"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/keirasaddons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maisiemarlowe.keirasaddons.KeirasAddons"
+		],
+		"client": [
+			"net.maisiemarlowe.keirasaddons.KeirasAddonsClient"
+		],
+		"fabric-datagen": [
+			"net.maisiemarlowe.keirasaddons.KeirasAddonsDataGenerator"
+		]
+	},
+	"mixins": [
+		"keirasaddons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
